@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/happyImg"
+                android:layout_width="217dp"
+                android:layout_height="165dp"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="140dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_view"
+                app:srcCompat="@drawable/happy" />
+
+            <Button
+                android:id="@+id/sos"
+
+                android:layout_width="220dp"
+                android:layout_height="152dp"
+                android:layout_marginTop="136dp"
+                android:layout_marginEnd="104dp"
+                android:text="@string/saveme"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_view" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="800dp"
+                android:layout_height="200dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="800dp"
+                    android:layout_height="200dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/loggedinuser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginEnd="174dp"
+                        android:text="@string/hello"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/motivation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/motivation"
+
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textColor="@color/pink"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/loggedinuser" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="72dp"
+                        android:text="@string/feels"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/motivation" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/angryImg"
+                android:layout_width="216dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="184dp"
+                android:layout_marginTop="76dp"
+                app:layout_constraintStart_toEndOf="@+id/sadImg"
+                app:layout_constraintTop_toBottomOf="@+id/coolImg"
+                app:srcCompat="@drawable/angry" />
+
+            <ImageView
+                android:id="@+id/sadImg"
+                android:layout_width="245dp"
+                android:layout_height="197dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/happytext"
+                app:srcCompat="@drawable/sad" />
+
+            <ImageView
+                android:id="@+id/depressedImg"
+                android:layout_width="193dp"
+                android:layout_height="194dp"
+                android:layout_marginStart="256dp"
+                android:layout_marginTop="84dp"
+                app:layout_constraintStart_toEndOf="@+id/angryImg"
+                app:layout_constraintTop_toBottomOf="@+id/gratefulImg"
+                app:srcCompat="@drawable/sick" />
+
+            <ImageView
+                android:id="@+id/coolImg"
+                android:layout_width="262dp"
+                android:layout_height="177dp"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="136dp"
+                app:layout_constraintStart_toEndOf="@+id/happyImg"
+                app:layout_constraintTop_toBottomOf="@+id/card_view"
+                app:srcCompat="@drawable/cool" />
+
+            <ImageView
+                android:id="@+id/gratefulImg"
+                android:layout_width="211dp"
+                android:layout_height="174dp"
+                android:layout_marginStart="208dp"
+                android:layout_marginTop="148dp"
+                app:layout_constraintStart_toEndOf="@+id/coolImg"
+                app:layout_constraintTop_toBottomOf="@+id/card_view"
+                app:srcCompat="@drawable/grateful" />
+
+            <TextView
+                android:id="@+id/happytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="248dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/happy"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/happyImg" />
+
+            <TextView
+                android:id="@+id/coolText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="332dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/cool"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toEndOf="@+id/happytext"
+                app:layout_constraintTop_toBottomOf="@+id/coolImg" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="352dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/grateful"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toEndOf="@+id/coolText"
+                app:layout_constraintTop_toBottomOf="@+id/gratefulImg" />
+
+            <TextView
+                android:id="@+id/sadText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="264dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/sad"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sadImg" />
+
+            <TextView
+                android:id="@+id/angryText"
+                android:layout_width="132dp"
+                android:layout_height="61dp"
+                android:layout_marginStart="320dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/angry"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toEndOf="@+id/sadText"
+                app:layout_constraintTop_toBottomOf="@+id/angryImg" />
+
+            <TextView
+                android:id="@+id/depressedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="312dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/depressed"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toEndOf="@+id/angryText"
+                app:layout_constraintTop_toBottomOf="@+id/depressedImg" />
+
+            <Button
+                android:id="@+id/dialhelp"
+                android:layout_width="222dp"
+                android:layout_height="155dp"
+                android:layout_marginTop="112dp"
+                android:layout_marginEnd="104dp"
+                android:text="@string/call"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sos" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

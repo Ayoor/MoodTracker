@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MT</string>
+    <string name="feels">How do you feel Today?</string>
+    <string name="saveme">Text Help</string>
+    <string name="call">Dial Help</string>
+    <string name="hello">Hello Ayodele</string>
+    <string name="happy">Happy</string>
+    <string name="cool">Cool</string>
+    <string name="sad">Sad</string>
+    <string name="signout">Sign out</string>
+
+    <string name="depressed">Depressed</string>
+    <string name="grateful">Grateful</string>
+    <string name="newmood">Log new Mood</string>
+    <string name="angry">Angry</string>
+    <string name="passwordhint">Password</string>
+    <string name="confirmpasswordhint">Confirm Password</string>
+    <string name="previous">Previous Moods</string>
+    <string name="name">Full Name</string>
+    <string name="SN">Student Number</string>
+    <string name="panic">Help Me</string>
+    <string name="signup">Sign Up</string>
+    <string name="fullname">Full Name</string>
+    <string name="moodhistory">You were Happy on 5/6/2023</string>
+    <string name="signin">Sign in</string>
+    <string name="emailhint">example@student.staffs.ac.uk</string>
+    <string name="typeemail">Enter your Email</string>
+    <string name="typepassword">Type Your Password</string>
+    <string name="motivation">&quot;Let the sun\'s warmth energize your soul and brighten your day with endless possibilities!&quot;</string>
+    <string name="notregistered">Not Registered Yet? Sign Up !</string>
+    <string name="registered">Already Registered? , Sign In !</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="sign_out">Sign out</string>
+
+
+</resources>

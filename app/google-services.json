@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "504326579922",
+    "project_id": "mood-tracker-a37dd",
+    "storage_bucket": "mood-tracker-a37dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:504326579922:android:54ce556be65f7b0142af0b",
+        "android_client_info": {
+          "package_name": "com.example.mt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "504326579922-bn9q9e0vomafk1fjj44759hfldchckac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRUrEBcwa-E5ksDMk6TxozxTPt3ZCjtbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "504326579922-bn9q9e0vomafk1fjj44759hfldchckac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
